@@ -1,0 +1,5 @@
+DESCRIÇÃO DA DEMANDA
+
+- Automação para realizar a cotação diária dos preços de um Console Playstatio 5, Cadeira Gamer, SSD de 1TB no site www.zoom.com.br
+- Os valores das datas, preços e link para acesso devem ser salvos em uma planilha 
+- A automação deve rodar todo dia as 12 horas
