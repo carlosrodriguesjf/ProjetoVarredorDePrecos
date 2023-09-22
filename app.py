@@ -13,6 +13,7 @@ import os
 
 
 def main():
+    print('Iniciar execução')
     def iniciar_driver():
         chrome_options = Options()
         arguments = ['--lang=en-US', '--window-size=1920,1080',
@@ -80,7 +81,7 @@ main()
 
 
 # Agendando a execução do programa para todo dia 0:00 h
-schedule.every().day.at('15:45').do(main)
+schedule.every().day.at('16:25').do(main)
 
 while True:
     schedule.run_pending()
