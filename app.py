@@ -77,11 +77,10 @@ def main():
 
     driver.quit()
     print('Fim da Execução')
-main()
 
 
 # Agendando a execução do programa para todo dia 0:00 h
-schedule.every().day.at('16:25').do(main)
+schedule.every().hour.do(main)
 
 while True:
     schedule.run_pending()
