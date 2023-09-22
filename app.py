@@ -78,15 +78,10 @@ def main():
 
 
 # Agendando a execução do programa para todo dia 0:00 h
-schedule.every().day.at('00:00').do(main)
+schedule.every().day.at('21:30').do(main)
 
 while True:
     schedule.run_pending()
     sleep(1)
-
-
-
-
-# Fazer o deploy em uma VPS
 
 
