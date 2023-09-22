@@ -79,11 +79,11 @@ def main():
 main()
 
 
-# # Agendando a execução do programa para todo dia 0:00 h
-# schedule.every().day.at('22:00').do(main)
+# Agendando a execução do programa para todo dia 0:00 h
+schedule.every().day.at('15:15').do(main)
 
-# while True:
-#     schedule.run_pending()
-#     sleep(1)
+while True:
+    schedule.run_pending()
+    sleep(1)
 
 
