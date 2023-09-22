@@ -15,7 +15,8 @@ import os
 def main():
     def iniciar_driver():
         chrome_options = Options()
-        arguments = ['--lang=pt-BR', '--start-maximized', '--incognito' ]
+        arguments = ['--lang=en-US', '--window-size=1920,1080',
+                 '--incognito', '--disable-gpu', '--no-sandbox', '--headless', '--disable-dev-shm-usage' ]
         for argument in arguments:
             chrome_options.add_argument(argument)
 
@@ -75,13 +76,14 @@ def main():
 
     driver.quit()
     print('Fim da Execução')
+main()
 
 
-# Agendando a execução do programa para todo dia 0:00 h
-schedule.every().day.at('22:00').do(main)
+# # Agendando a execução do programa para todo dia 0:00 h
+# schedule.every().day.at('22:00').do(main)
 
-while True:
-    schedule.run_pending()
-    sleep(1)
+# while True:
+#     schedule.run_pending()
+#     sleep(1)
 
 
